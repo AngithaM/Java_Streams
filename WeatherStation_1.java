@@ -1,8 +1,5 @@
 /*
  * Name: Angitha Mathew
- * Student ID:21239691
- * LSDA ASSIGNMENT 2
- * Both Questions answered in a single file
  */
 package LSDA_ASSIGNMENT2;
 
