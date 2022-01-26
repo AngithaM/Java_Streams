@@ -1,5 +1,6 @@
 # Java_8_streams
 ##### Objective:
+#### WeatherStation_1.java
 
 Suppose you want to analyze the temperature data produced by weather stations (meteorological 
 stations). 
@@ -34,4 +35,17 @@ is, your code should resemble the MapReduce approach but using only plain Java >
 any actual MapReduce framework such as Hadoop). Also, you need to make use of Java 8 Streams (as far 
 as possible) and parallel stream processing (where appropriate).
 Finally, add code to your main-method which calls your countTemperatures method using some test 
-measurement data from two different stations, and prints the result
+measurement data from two different stations, and prints the result.
+
+#### WeatherStation.java
+
+Add a static method countTemperature(t) to your Java class WeatherStation from the previous assignment. It should 
+return the number of times temperature t has been approximately measured so far by any of the weather stations in 
+stations (that is, counting across all the stations). “Approximately” here means t is within interval [t-1..t+1].
+(So this method provides only a part of the functionality of countTemperatures(…) from the previous assignment.)
+Use Apache Spark to implement this method, by making use of RDDs as far as possible, with operations parameterized with 
+lambda expressions, and using parallel computing as appropriate. No need to use the MapReduce pattern for this question
+(but certain map and reduction/aggregation-style operations will probably be useful here). Make your code as efficient and 
+concise as possible by freely using the means Spark provides with RDDs/JavaRDDs (but without using DataFrames or 
+Datasets). 
+
